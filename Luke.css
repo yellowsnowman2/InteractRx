@@ -1,10 +1,20 @@
-#search-bar-2{
-    border:15px solid #451E3E;
-    padding:10%;
-    background-color:blue;
+html{
+    height:50%;
+    width:75%;
+    display:flex;
+    padding:20px;
+    border-radius:30px;
 }
-.output1{
-    border:15px solid green;
-    color:white;
-    opacity:1;
+#selected-drug-list{
+    outline:40px;
+    outline-color:#251E3E;
+    height:flex;
+    width:flex;
+    border-radius:20px;
+}
+.fw-bold{
+    color:#851E3E;
+}
+.ms-2{
+    color:#251E3E;
 }

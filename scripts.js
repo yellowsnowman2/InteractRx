@@ -1,3 +1,4 @@
+
 const autoCompleteElement = document.querySelector("#autocomplete-input");
 
 let currentFocus;

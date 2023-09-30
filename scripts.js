@@ -11,6 +11,15 @@ autoCompleteElement.addEventListener("input", async () => {
     return false;
   }
 
+autoCompleteElement.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+  
+      return false; 
+    }
+  });
+  
+
   currentFocus = -1;
 
   const list = document.createElement("div");

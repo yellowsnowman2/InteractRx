@@ -28,7 +28,18 @@ header {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   font: 16px Arial;
   font-family:'Courier New', Courier, monospace;
 }
@@ -94,6 +105,143 @@ input[type=submit] {
 .ms-2{
   color:#851E3E;
 }
+ 
+#drug-info {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  background-color: aliceblue;
+}
+
+#drug-info #interaction-display {
+  background-color: #00ff96;
+  width: 812.34px;
+  height: 456px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  border: 3px solid;
+}
+
+#drug-info #description {
+  margin: 5px;
+}
+
+#drug-info #severity-info {
+  margin: 5px;
+}
+
+#drug-info #source-info {
+  margin: 5px;
+}
+
+#drug-info #drug1 {
+  background-color: #ffff00;
+  width: 541.56px;
+  height: 304px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  border: 3px solid;
+}
+
+#drug-info #drug1-info-ctnr {
+  margin: 5px;
+}
+
+#drug-info #drug2-info-ctnr {
+  margin: 5px;
+}
+
+#drug-info #drug-names-ctnr {
+  display: flex;
+  margin: 5px;
+}
+
+#drug-info #drug-icon {
+  height: 30px;
+  width: 30px;
+}
+
+#drug-info #severity-icon {
+  height: 30px;
+  width: 30px;
+}
+
+#drug-info #sources-icon {
+  height: 70px;
+  width: 70px;
+}
+
+#drug-info #interaction-data {
+  height: 100px;
+}
+
+#drug-info #severity-data {
+  height: 100px;
+}
+
+#drug-info #drug-names-title {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-family: Lexend;
+}
+
+#drug-info #drug-names {
+  display: flex;
+  margin: 5px;
+  font-family: Quicksand;
+}
+
+#drug-info #drug2 {
+  background-color: #00a1ff;
+  width: 541.56px;
+  height: 304px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  border: 3px solid;
+}
+
+#drug-info #disclaimer {
+  display: flex;
+  height: 20%;
+  background-color: beige;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  border: 3px solid;
+  width: 98%;
+}
+
+#drug-info #disclaimer-text-box {
+  margin: 5px;
+}
+
+#drug-info #space1 {
+  width: 30px;
+}
+
+#drug-info #space2 {
+  width: 30px;
+}
+
+#drug-info #space3 {
+  width: 30px;
+}
+
+#drug-info #space4 {
+  width: 30px;
+} 
 
 .list-group-item {
   background-color:#251E3E;

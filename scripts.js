@@ -98,7 +98,7 @@ const createDrugList = () => {
                 ${drug.synonym}
             </div>
             <button class="delete-btn badge bg-primary rounded-pill" data="${drug.rxcui}">
-                <img width="20px" src="./trash.svg" alt="trash-icon" />
+                <img width="20px" src="./trashcan.svg" alt="trash-icon" />
             </button>
         </li>
     `;

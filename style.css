@@ -14,7 +14,7 @@ header {
   top: 10px;
   left: 10px;
   z-index: 999; /* Ensure the image is on top */
-  height: 10px;
+  height: 5px;
 }
 
 .profile-small {
@@ -84,3 +84,23 @@ input[type=submit] {
   background-color: #E9E9E9;
 }
 
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #FFFFFF;
+}
+.fw-bold{
+  color:#851E3E;
+}
+.ms-2{
+  color:#851E3E;
+}
+
+.list-group-item {
+  background-color:#251E3E;
+  color:#851E3E;
+  padding:5px;
+  border-width:5px;
+  border-color:#451E3E;
+  height:75%;
+  width:flex;
+}

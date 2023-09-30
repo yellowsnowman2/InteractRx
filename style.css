@@ -1,3 +1,29 @@
+/* Header Title */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  position: relative; /* Add this to establish a stacking context */
+  font-family:'Courier New', Courier, monospace;
+}
+
+
+.img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999; /* Ensure the image is on top */
+  height: 5px;
+}
+
+.profile-small {
+  width: 100px; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 50%;
+  border: 10px solid #251E3E;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,11 +41,14 @@ body {
   display: flex;
   flex-direction: column;
   font: 16px Arial;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .autocomplete {
+  margin-top: 40px;
   position: relative;
   display: inline-block;
+  font-family:'Courier New', Courier, monospace;
 }
 
 input {
@@ -27,17 +56,20 @@ input {
   background-color: #F1F1F1;
   padding: 10px;
   font-size: 16px;
+  font-family:'Courier New', Courier, monospace;
 }
 
 input[type=text] {
   background-color: #F1F1F1;
   width: 100%;
+  font-family:'Courier New', Courier, monospace;
 }
 
 input[type=submit] {
   background-color: DodgerBlue;
   color: #fff;
   cursor: pointer;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .autocomplete-items {
@@ -49,6 +81,7 @@ input[type=submit] {
   top: 100%;
   left: 0;
   right: 0;
+  
 }
 
 .autocomplete-items div {
@@ -209,3 +242,13 @@ input[type=submit] {
 #drug-info #space4 {
   width: 30px;
 } 
+
+.list-group-item {
+  background-color:#251E3E;
+  color:#851E3E;
+  padding:5px;
+  border-width:5px;
+  border-color:#451E3E;
+  height:75%;
+  width:flex;
+}

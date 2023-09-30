@@ -56,8 +56,17 @@ input[type=submit] {
   color: #FFFFFF;
 }
 .fw-bold{
-  color:#851E3E;
+  color:#251E3E;
 }
 .ms-2{
-  color:#851E3E;
+  color:#251E3E;
+}
+.list-group-item {
+  background-color:#851E3E;
+  color:#251E3E;
+  padding:5px;
+  border-width:5px;
+  border-color:#451E3E;
+  height:75%;
+  width:flex;
 }

@@ -92,17 +92,6 @@ const createDrugList = () => {
   targetDrugList.forEach((drug) => {
     drugTemplate += `
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <style>
-          .list-group-item {
-            background-color:#251E3E;
-            color:#851E3E;
-            padding:5px;
-            border-width:5px;
-            border-color:#451E3E;
-            height:75%;
-            width:flex;
-          }
-        </style>
             <div class="ms-2 me-auto">
             <div class="fw-bold">${drug.rxcui} ${drug.name}</div>
                 ${drug.synonym}

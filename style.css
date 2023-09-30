@@ -55,3 +55,9 @@ input[type=submit] {
   background-color: DodgerBlue !important;
   color: #FFFFFF;
 }
+.fw-bold{
+  color:#851E3E;
+}
+.ms-2{
+  color:#851E3E;
+}

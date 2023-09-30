@@ -19,9 +19,10 @@
   </head>
   <body>
     <section>
-      <h2>Drug API</h2>
-      <p>Type below:</p>
-      <p>WARNING: Your spelling must be perfect.</p>
+      <h2>InteractRx</h2>
+      <p>Type the name of the drug you are looking for below. When you are done, press the submit button.</p>
+        <h3 style="color:red">WARNING: Hitting enter will reload the site</h3>
+      <p>Ensure that your spelling is correct</p>
       <form autocomplete="off">
         <div class="autocomplete" style="width: 300px">
           <input
@@ -31,8 +32,9 @@
             placeholder="e.g. Aspirin"
           />
         </div>
-        <input type="submit" />
+        <input type="submit"/>
       </form>
+      <p>Your chosen drugs:</p>
     </section>
     <section>
       <div id="selected-drug-list"></div>

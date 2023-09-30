@@ -21,7 +21,7 @@ header {
   width: 100px; /* Set the width of the image */
   height: auto; /* Maintain the aspect ratio */
   border-radius: 50%;
-  border: 10px solid #FEDE00;
+  border: 10px solid #251E3E;
 }
 
 * {

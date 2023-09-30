@@ -72,15 +72,15 @@ input[type=submit] {
 .ms-2{
   color:#851E3E;
 }
-
+ 
 #drug-info {
-  height: 80%;
+  height: 90%;
   width: 100%;
   display: flex;
   background-color: aliceblue;
 }
 
-#interaction-display {
+#drug-info #interaction-display {
   background-color: #00ff96;
   width: 812.34px;
   height: 456px;
@@ -92,19 +92,19 @@ input[type=submit] {
   border: 3px solid;
 }
 
-#description {
+#drug-info #description {
   margin: 5px;
 }
 
-#severity-info {
+#drug-info #severity-info {
   margin: 5px;
 }
 
-#source-info {
+#drug-info #source-info {
   margin: 5px;
 }
 
-#drug1 {
+#drug-info #drug1 {
   background-color: #ffff00;
   width: 541.56px;
   height: 304px;
@@ -116,56 +116,56 @@ input[type=submit] {
   border: 3px solid;
 }
 
-#drug1-info-ctnr {
+#drug-info #drug1-info-ctnr {
   margin: 5px;
 }
 
-#drug2-info-ctnr {
+#drug-info #drug2-info-ctnr {
   margin: 5px;
 }
 
-#drug-names-ctnr {
+#drug-info #drug-names-ctnr {
   display: flex;
   margin: 5px;
 }
 
-#drug-icon {
+#drug-info #drug-icon {
   height: 30px;
   width: 30px;
 }
 
-#severity-icon {
+#drug-info #severity-icon {
   height: 30px;
   width: 30px;
 }
 
-#sources-icon {
+#drug-info #sources-icon {
   height: 70px;
   width: 70px;
 }
 
-#interaction-data {
+#drug-info #interaction-data {
   height: 100px;
 }
 
-#severity-data {
+#drug-info #severity-data {
   height: 100px;
 }
 
-#drug-names-title {
+#drug-info #drug-names-title {
   display: flex;
   margin-top: 5px;
   margin-left: 5px;
   font-family: Lexend;
 }
 
-#drug-names {
+#drug-info #drug-names {
   display: flex;
   margin: 5px;
   font-family: Quicksand;
 }
 
-#drug2 {
+#drug-info #drug2 {
   background-color: #00a1ff;
   width: 541.56px;
   height: 304px;
@@ -177,7 +177,7 @@ input[type=submit] {
   border: 3px solid;
 }
 
-#disclaimer {
+#drug-info #disclaimer {
   display: flex;
   height: 20%;
   background-color: beige;
@@ -190,22 +190,22 @@ input[type=submit] {
   width: 98%;
 }
 
-#disclaimer-text-box {
+#drug-info #disclaimer-text-box {
   margin: 5px;
 }
 
-#space1 {
+#drug-info #space1 {
   width: 30px;
 }
 
-#space2 {
+#drug-info #space2 {
   width: 30px;
 }
 
-#space3 {
+#drug-info #space3 {
   width: 30px;
 }
 
-#space4 {
+#drug-info #space4 {
   width: 30px;
-}
+} 

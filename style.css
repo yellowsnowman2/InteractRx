@@ -2,7 +2,18 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   font: 16px Arial;
 }
 
@@ -60,4 +71,141 @@ input[type=submit] {
 }
 .ms-2{
   color:#851E3E;
+}
+
+#drug-info {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  background-color: aliceblue;
+}
+
+#interaction-display {
+  background-color: #00ff96;
+  width: 812.34px;
+  height: 456px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  border: 3px solid;
+}
+
+#description {
+  margin: 5px;
+}
+
+#severity-info {
+  margin: 5px;
+}
+
+#source-info {
+  margin: 5px;
+}
+
+#drug1 {
+  background-color: #ffff00;
+  width: 541.56px;
+  height: 304px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  border: 3px solid;
+}
+
+#drug1-info-ctnr {
+  margin: 5px;
+}
+
+#drug2-info-ctnr {
+  margin: 5px;
+}
+
+#drug-names-ctnr {
+  display: flex;
+  margin: 5px;
+}
+
+#drug-icon {
+  height: 30px;
+  width: 30px;
+}
+
+#severity-icon {
+  height: 30px;
+  width: 30px;
+}
+
+#sources-icon {
+  height: 70px;
+  width: 70px;
+}
+
+#interaction-data {
+  height: 100px;
+}
+
+#severity-data {
+  height: 100px;
+}
+
+#drug-names-title {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-family: Lexend;
+}
+
+#drug-names {
+  display: flex;
+  margin: 5px;
+  font-family: Quicksand;
+}
+
+#drug2 {
+  background-color: #00a1ff;
+  width: 541.56px;
+  height: 304px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  border: 3px solid;
+}
+
+#disclaimer {
+  display: flex;
+  height: 20%;
+  background-color: beige;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  border: 3px solid;
+  width: 98%;
+}
+
+#disclaimer-text-box {
+  margin: 5px;
+}
+
+#space1 {
+  width: 30px;
+}
+
+#space2 {
+  width: 30px;
+}
+
+#space3 {
+  width: 30px;
+}
+
+#space4 {
+  width: 30px;
 }

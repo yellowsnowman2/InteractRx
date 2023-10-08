@@ -275,3 +275,15 @@ input[type=submit] {
   height:75%;
   width:flex;
 }
+
+.heroel {
+  background-image: url(please_work_oh_my_god.jpg);
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: greenyellow;
+}

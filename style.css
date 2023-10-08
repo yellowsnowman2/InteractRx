@@ -88,7 +88,8 @@ input[type="submit"] {
   background-color: DodgerBlue;
   color: #fff;
   cursor: pointer;
-  font-family: "Courier New", Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
+  justify-content: center;
 }
 
 .autocomplete-items {
@@ -117,11 +118,33 @@ input[type="submit"] {
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
-.fw-bold {
-  color: #851e3e;
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
 }
-.ms-2 {
-  color: #851e3e;
+.center-text {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.chosen-text {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.search-button {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.fw-bold{
+  color: black;
+}
+.ms-2{
+  color: black;
 }
 
 #drug-info {
@@ -262,17 +285,23 @@ input[type="submit"] {
 }
 
 .list-group-item {
-  background-color: #251e3e;
-  color: #851e3e;
-  padding: 5px;
-  border-width: 5px;
-  border-color: #451e3e;
-  height: 75%;
-  width: flex;
+  background-color: white;
+  color: black;;
+  padding:5px;
+  border-width:5px;
+  height:75%;
+  width:flex; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid black;
+  margin-right: 35px;
+  margin: 8px;
 }
 
 .card-body {
-  margin: 32px;
+  margin: 8px;
   border: 1px solid;
   padding: 32px;
   border-radius: 10px;

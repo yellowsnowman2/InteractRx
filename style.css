@@ -1,8 +1,7 @@
-
 .topnav {
   background-color: grey;;
   overflow: hidden;
-  margin-right: 40px;
+ 
 }
 
 .topnav a {
@@ -30,6 +29,7 @@ header {
   background-color: grey;
   padding: 10px 20px; 
   font-family: 'Courier New', Courier, monospace;
+  justify-content: space-between;
 }
 
 
@@ -39,7 +39,7 @@ header {
 }
 
 .profile-small {
-  width: 50px; 
+  width: 120px; 
   height: auto; 
   border-radius: 50%;
   border: 2px solid #251E3E;
@@ -58,6 +58,7 @@ html {
 }
 
 body {
+  margin: 0px;
   height: 100%;
   width: 100%;
   display: flex;

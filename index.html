@@ -17,23 +17,49 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <div class="img">
-      <img src="https://www2.deloitte.com/content/dam/Deloitte/us/Images/promo_images/icons/interact-logo-promo.png" class="profile-small" alt="Logo" />
-    </div>
-    <div class="header">
-      <h1>Drug API</h1>
-      <h5>InteractRx is a symbol of innovation and empowerment in the realm of healthcare. Our dedicated team has pioneered a groundbreaking drug interactions library utilizing the NIH(National Library of Medicine), crafted with precision and care, aimed at enriching society's awareness about pharmaceuticals. With InteractRx, we're bridging the gap between the complex world of drugs and the general public, offering a valuable resource that empowers individuals to make informed decisions about their health. Through data-driven insights and accessible information, we're shaping a healthier, more informed tomorrow for all.</h5>
-    </div>
-  </header>
-</html>
+
+  <body>
+    <header>
+      <div class="img">
+        <img
+          src="https://www2.deloitte.com/content/dam/Deloitte/us/Images/promo_images/icons/interact-logo-promo.png"
+          class="profile-small"
+          alt="Logo"
+        />
+      </div>
+      <div class="header">
+        <h1>Drug API</h1>
+        <h5>
+          InteractRx is a symbol of innovation and empowerment in the realm of
+          healthcare. Our dedicated team has pioneered a groundbreaking drug
+          interactions library utilizing the NIH(National Library of Medicine),
+          crafted with precision and care, aimed at enriching society's
+          awareness about pharmaceuticals. With InteractRx, we're bridging the
+          gap between the complex world of drugs and the general public,
+          offering a valuable resource that empowers individuals to make
+          informed decisions about their health. Through data-driven insights
+          and accessible information, we're shaping a healthier, more informed
+          tomorrow for all.
+        </h5>
+      </div>
+    </header>
     <section>
+<<<<<<< HEAD
       <section >
         <h2>InteractRx</h2>
         <p>Type the name of the drug you are looking for below. When you are done, press the submit button.</p>
           <h3 style="color:red">WARNING: Hitting enter will reload the site</h3>
         <p>Ensure that your spelling is correct</p>
       </section>
+=======
+      <h2>InteractRx</h2>
+      <p>
+        Type the name of the drug you are looking for below. When you are done,
+        press the submit button.
+      </p>
+      <h3 style="color: red">WARNING: Hitting enter will reload the site</h3>
+      <p>Ensure that your spelling is correct</p>
+>>>>>>> f308f012ccf37b03aeaf5457e2f3d495a5868b99
       <form autocomplete="off">
         <div class="autocomplete" style="width: 300px">
           <input
@@ -43,7 +69,6 @@
             placeholder="e.g. Aspirin"
           />
         </div>
-        <input type="submit"/>
       </form>
       <p>Your chosen drugs:</p>
     </section>
@@ -52,6 +77,69 @@
     </section>
     <section>
       <button id="generate-interaction">Search Interactions</button>
+
+      <div id="drug-info">
+        <div id="space1"></div>
+
+        <div id="drug1">
+          <div id="drug1-info-ctnr">
+            <div id="drug1-name">Cocaine</div>
+            <div id="drug1-rxcui"></div>
+          </div>
+        </div>
+
+        <div id="space2"></div>
+
+        <div id="interaction-display">
+          <div id="drug-names-ctnr">
+            <div id="drug-names-title">Drug Interaction =</div>
+            <div id="drug-names"></div>
+          </div>
+
+          <div id="interaction-data">
+            <img
+              id="drug-icon"
+              src="https://cdn.pixabay.com/photo/2020/12/09/16/40/pill-5817906_1280.png"
+            />
+            <div id="description">description</div>
+          </div>
+
+          <div id="severity-data">
+            <img
+              id="severity-icon"
+              src="https://cdn-icons-png.flaticon.com/128/5951/5951031.png"
+            />
+            <div id="severity-info"></div>
+          </div>
+
+          <div id="sources">
+            <img
+              id="sources-icon"
+              src="https://cdn-icons-png.flaticon.com/512/8687/8687709.png"
+            />
+            <div id="source-info"></div>
+          </div>
+        </div>
+
+        <div id="space3"></div>
+
+        <div id="drug2">
+          <div id="drug2-info-ctnr">
+            <div id="drug2-name">Meth</div>
+            <div id="drug2-rxcui"></div>
+          </div>
+        </div>
+
+        <div id="space4"></div>
+      </div>
+      <div id="disclaimer">
+        <div id="disclaimer-text-box">
+          Disclaimer: It is not the intention of this application to provide
+          specific medical advice, but rather to provide users with information
+          to better understand their health and their medications. We urge you
+          to consult with a qualified physician for advice about medications.
+        </div>
+      </div>
     </section>
   </body>
   <script src="./scripts.js"></script>

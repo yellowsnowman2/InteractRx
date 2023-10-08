@@ -287,3 +287,17 @@ input[type="submit"] {
   font-size: 24px;
   margin: 0 0 10px 0;
 }
+.heroel {
+  background-image: url(please_work_oh_my_god.jpg);
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: greenyellow;
+}
+.heroel h2{
+  font-size:30px;
+}

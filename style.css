@@ -1,27 +1,49 @@
-/* Header Title */
+.topnav {
+  background-color: grey;;
+  overflow: hidden;
+ 
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 40px;
-  position: relative; /* Add this to establish a stacking context */
-  font-family:'Courier New', Courier, monospace;
+  display: flex; 
+  align-items: center; 
+  background-color: grey;
+  padding: 10px 20px; 
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: space-between;
 }
 
 
 .img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 999; /* Ensure the image is on top */
-  height: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .profile-small {
-  width: 100px; /* Set the width of the image */
-  height: auto; /* Maintain the aspect ratio */
+  width: 120px; 
+  height: auto; 
   border-radius: 50%;
-  border: 10px solid #251E3E;
+  border: 2px solid #251E3E;
+  margin-right: 10px; 
 }
 
 * {
@@ -36,6 +58,7 @@ html {
 }
 
 body {
+  margin: 0px;
   height: 100%;
   width: 100%;
   display: flex;

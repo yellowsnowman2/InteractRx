@@ -1,4 +1,3 @@
-
 const autoCompleteElement = document.querySelector("#autocomplete-input");
 
 let currentFocus;
@@ -11,14 +10,13 @@ autoCompleteElement.addEventListener("input", async () => {
     return false;
   }
 
-autoCompleteElement.addEventListener("keydown", (e) => {
+  autoCompleteElement.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
-  
-      return false; 
+
+      return false;
     }
   });
-  
 
   currentFocus = -1;
 
@@ -142,63 +140,58 @@ const createDrugList = () => {
 document
   .querySelector("#generate-interaction")
   .addEventListener("click", async (e) => {
-    let drug1Name = "";
-    let drug2Name = "";
-    let description = "";
-    let severity = "";
-    let source = "";
-    let rxcui1 = "";
-    let rxcui2 = "";
-
     const drugRxcuiArray = targetDrugList.map((drugDatum) => drugDatum.rxcui);
 
     const stringParam = drugRxcuiArray.join("+");
 
-    const res = await fetch(
-      `https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=${stringParam}`
-    );
-    const data = await res.json();
+    let data;
 
-    console.log("data", data);
+    try {
+      const res = await fetch(
+        `https://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=${stringParam}`
+      );
+      data = await res.json();
 
-    drug1Name =
-      data.fullInteractionTypeGroup[0].fullInteractionType[0].interactionPair[0]
-        .interactionConcept[0].sourceConceptItem.name;
+      console.log("data", data);
 
-    document.querySelector("#drug1-name").innerHTML = drug1Name;
+      if (!data.fullInteractionTypeGroup) {
+        throw Error(
+          "No Interactaction Data has been Found, Please try again ..."
+        );
+      }
 
-    drug2Name =
-      data.fullInteractionTypeGroup[0].fullInteractionType[0].interactionPair[0]
-        .interactionConcept[1].sourceConceptItem.name;
+      let template = "";
+      let drugLinkTemplate = "";
+      const involvedDrugs = [];
 
-    document.querySelector("#drug2-name").innerHTML = drug2Name;
+      data.fullInteractionTypeGroup[0].fullInteractionType[0].interactionPair.forEach(
+        (interaction) => {
+          interaction.interactionConcept.forEach((interactionConcept) => {
+            involvedDrugs.push(interactionConcept.sourceConceptItem.name);
+            drugLinkTemplate += `
+              <a href="${interactionConcept.sourceConceptItem.url}" class="card-link">Drug Information on ${interactionConcept.sourceConceptItem.name}</a>
+            `;
+          });
 
-    document.querySelector("#drug-names").innerHTML =
-      drug1Name + " + " + drug2Name;
+          template += `
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">${involvedDrugs.join(" and ")}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Severity: ${
+                  interaction.severity === "N/A"
+                    ? "Unknown"
+                    : interaction.severity
+                }</h6>
+                <p class="card-text">${interaction.description}</p>
+                ${drugLinkTemplate}
+            </div>
+          </div>
+        `;
+        }
+      );
 
-    description =
-      data.fullInteractionTypeGroup[0].fullInteractionType[0].interactionPair[0]
-        .description;
-
-    document.querySelector("#description").innerHTML =
-      "Description: " + description;
-
-    severity =
-      data.fullInteractionTypeGroup[0].fullInteractionType[0].interactionPair[0]
-        .severity;
-    document.querySelector("#severity-info").innerHTML =
-      "Severity: " + severity;
-
-    source = data.fullInteractionTypeGroup[0].sourceName;
-    document.querySelector("#source-info").innerHTML = "Source: " + source;
-
-    rxcui1 =
-      data.fullInteractionTypeGroup[0].fullInteractionType[0].interactionPair[0]
-        .interactionConcept[0].minConceptItem.rxcui;
-    document.querySelector("#drug1-rxcui").innerHTML = "RXCUI: " + rxcui1;
-
-    rxcui2 =
-      data.fullInteractionTypeGroup[0].fullInteractionType[0].interactionPair[0]
-        .interactionConcept[1].minConceptItem.rxcui;
-    document.querySelector("#drug2-rxcui").innerHTML = "RXCUI: " + rxcui2;
+      document.querySelector("#drug-interaction-results").innerHTML = template;
+    } catch (error) {
+      console.error(error);
+    }
   });

@@ -286,18 +286,23 @@ input[type="submit"] {
 
 .list-group-item {
   background-color: white;
-  color: black;;
   padding:5px;
   border-width:5px;
   height:75%;
-  width:flex; 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid black;
-  margin-right: 35px;
   margin: 8px;
+  display: flex;
+  justify-content:space-between
+}
+.delete-btn{
+  height: fit-content;
+  padding:8px;
+  background-color:grey;
+  border-radius:8px;
 }
 
 .card-body {

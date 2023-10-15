@@ -301,7 +301,7 @@ input[type="submit"] {
 .delete-btn{
   height: fit-content;
   padding:8px;
-  background-color:grey;
+  background-color:whitesmoke;
   border-radius:8px;
 }
 

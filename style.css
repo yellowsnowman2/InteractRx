@@ -59,7 +59,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  font: 16px Arial;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -286,18 +285,23 @@ input[type="submit"] {
 
 .list-group-item {
   background-color: white;
-  color: black;;
   padding:5px;
   border-width:5px;
   height:75%;
-  width:flex; 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid black;
-  margin-right: 35px;
   margin: 8px;
+  display: flex;
+  justify-content:space-between
+}
+.delete-btn{
+  height: fit-content;
+  padding:8px;
+  background-color:whitesmoke;
+  border-radius:8px;
 }
 
 .card-body {
@@ -320,7 +324,7 @@ input[type="submit"] {
   display: flex;
 }
 .heroel {
-  background-image: url(please_work_oh_my_god.jpg);
+  background-image: url(family.jpg);
   min-height: 500px;
   background-size: cover;
   display: flex;
@@ -348,4 +352,12 @@ input[type="submit"] {
 .herooo {
   width: 50%;
   margin: 16px;
+}
+
+.heroel h2{
+  font-size:30px;
+}
+
+#disclaimer-text-box {
+  font-size: 10px;
 }

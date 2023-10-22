@@ -104,7 +104,7 @@ const createDrugList = () => {
             <div class="fw-bold">${drug.rxcui} ${drug.name}</div>
                 ${drug.synonym}
             </div>
-            <button class="delete-btn badge bg-primary rounded-pill" data="${drug.rxcui}">
+            <button class="delete-btn badge bg-primary rounded-pill " data="${drug.rxcui}">
                 <img width="20px" src="./trashcan.svg" alt="trash-icon" />
             </button>
         </li>

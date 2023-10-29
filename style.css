@@ -361,3 +361,13 @@ input[type="submit"] {
 #disclaimer-text-box {
   font-size: 10px;
 }
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .herooo, .heroel {
+    width: 100%;
+  }
+}
